@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="style/cadastro.css">
+  <title>Formulário de registro de novo usuário</title>
+</head>
+
+<body>
+  <form action="/registro" method="post">
+    <h1><b>Cadastro de novo usuário</b></h1>
+    <div class="form-group">
+      <label for="nome"><b>Nome completo</b></label>
+      <input type="text" class="form-control" id="nome" name="nome" placeholder="Ex.: João da Silva">
+    </div>
+    <div class="form-group">
+      <label for="email"><b>E-mail</b></label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Ex.: joao.da.silva@email.com">
+    </div>
+    <div class="form-group">
+      <label for="data_nascimento"><b>Data de nascimento</b></label>
+      <input type="date" class="form-control" id="data_nascimento" name="data_nascimento">
+    </div>
+    <div class="form-group">
+      <label for="estado"><b>Estado</b></label>
+      <input type="text" class="form-control" id="estado" name="estado" placeholder="Ex.: São Paulo">
+    </div>
+    <div class="form-group">
+      <label for="endereco"><b>Endereço</b></label>
+      <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Ex.: Rua das Flores, 123">
+    </div>
+    <div  class="form-group">
+      <div>
+    <label for="sexo"><b>Sexo:</b> </label>
+  </div>
+  <div class="sexo">
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="opcao1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+          Masculino 
+        </label>
+    </div>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="opcao2">
+      <label class="form-check-label" for="exampleRadios2">
+       Feminino 
+      </label>
+    </div>
+    </div>
+  </div>
+
+    
+    <div class="form-group">
+      <div>
+        <label for="categorias_interesse"><b>Categorias de interesse(marque mais de uma)</b></label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="categoria_interesse_praia" name="categorias_interesse[]"
+          value="praia">
+        <label class="form-check-label" for="categoria_interesse_praia">Praia</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="categoria_interesse_campo" name="categorias_interesse[]"
+          value="campo">
+        <label class="form-check-label" for="categoria_interesse_campo">Campo</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="categoria_interesse_nacionais" name="categorias_interesse[]"
+          value="nacionais">
+        <label class="form-check-label" for="categoria_interesse_nacionais">Nacionais</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="categoria_interesse_internacionais"
+          name="categorias_interesse[]" value="internacionais">
+        <label class="form-check-label" for="categoria_interesse_internacionais">Internacionais</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="categoria_interesse_serra" name="categorias_interesse[]"
+          value="serra">
+        <label class="form-check-label" for="categoria_interesse_serra">Serra</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="categoria_interesse_cidade" name="categorias_interesse[]"
+          value="cidade">
+        <label class="form-check-label" for="categoria_interesse_cidade">Cidade</label>
+      </div>
+    </div>
+    <div class="login">
+      <label for="login"><b>Login</b></label>
+
+      <input class="input_text" type="text" name="login" id="login" required>
+    </div>
+    <div class="login">
+      <label for="senha"><b>Senha</b></label>
+      <input class="input_text" type="password" name="senha" id="senha" required>
+    </div>
+  <button class="botao" type="reset">Limpar</button></a>
+    <button class="botao" type="submit"><a href="pagamento.html">Salvar</a></button></a>
+   
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
